@@ -8,4 +8,4 @@ Note taking app written in vanilla JavaScript, HTML, and CSS for CSCN 408 Web an
 ## Note Page
   - Note title
   - Back button (top left?)
-  - test
+  - Save button (autosave?)
