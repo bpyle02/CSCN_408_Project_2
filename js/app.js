@@ -24,8 +24,8 @@ function showNotes() {
                         <div class="bottom-content">
                             <span>${note.date}</span>
                             <div class="settings">
-                                <i onClick="updateNote(${index}, '${note.title}', '${note.description}')"  class="uil uil-edit"></i>
-                                <i onClick="deleteNote(${index})" class="uil uil-trash"></i>
+                                <i onClick="updateNote(${index}, '${note.title}', '${note.description}')"  class="uil uil-edit">✏️</i>
+                                <i onClick="deleteNote(${index})" class="uil uil-trash">🗑️</i>
                             </div>
                         </div>
                     </li>`;
