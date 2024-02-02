@@ -1,9 +1,15 @@
 
 :root{
+    --primaryColor:#dfdee3;
+    --secondaryColor: white;
+    --primaryText: black;
+    --secondaryText: #7a797c;
+
+    --accentColor: #dcb13d;
     
-    --primaryColor:#0e153a;
-    --secondarycolor: #e2f3f5;
-    --primaryText: #3d5af1;
+    --dmPrimaryColor:#1c1c1c;
+    --dmsecondaryColor: grey;
+    --dmPrimaryText: white;
 }
 
 *{
@@ -30,7 +36,7 @@ button {
 .wrapper li{
     height: 250px;
     list-style: none;
-    background: var(--secondarycolor);
+    background: var(--secondaryColor);
     border-radius: 5px;
     padding: 15px 20px 20px;
 }
@@ -64,16 +70,18 @@ button {
 .note p{
     font-size: 22px;
     font-weight: 500;
-    color: var(--primaryColor);
+    color: var(--primaryText);
+    font-weight: bold;
 }
 .note span{
     display: block;
     margin-top: 5px;
-    color: var(--primaryText);
+    color: var(--secondaryText);
     font-size: 16px;
 }
 .bottom-content span{
-    color: var(--primaryText);
+    color: var(--accentColor);
+    font-weight: bold;
     font-size: 14px;
 }
 .bottom-content .settings i{
@@ -168,9 +176,8 @@ form .row label{
     border-radius: 5px;
     color: #fff;
     font-size: 17px;
-    background: var(--primaryColor);
+    background: var(--accentColor);
 }
-
 
 .uil {
     font-style: normal;
