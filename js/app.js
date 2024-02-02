@@ -56,8 +56,7 @@ function updateNote(noteId, title, desc) {
 function darkLightMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-  }
-
+};
 
 addBox.addEventListener('click', ()=>{
     titleEl.focus();
