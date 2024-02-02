@@ -49,7 +49,7 @@ function updateNote(noteId, title, desc) {
     addBox.click();
     titleEl.value = title;
     descEl.value = desc;
-    addBtn.innerText = 'Edit Note';
+    addBtn.innerText = 'Save Note';
     popupTitle.innerText = 'Editing a Note';
 }
 
