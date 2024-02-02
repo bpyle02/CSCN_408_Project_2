@@ -53,6 +53,11 @@ function updateNote(noteId, title, desc) {
     popupTitle.innerText = 'Editing a Note';
 }
 
+function darkLightMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
 
 addBox.addEventListener('click', ()=>{
     titleEl.focus();
@@ -97,3 +102,4 @@ addBtn.addEventListener('click', (e)=>{
         showNotes();
     }
 });
+
