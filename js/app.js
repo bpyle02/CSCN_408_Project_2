@@ -69,8 +69,7 @@ function darkLightMode() {
         element.style.setProperty("--primaryText", getComputedStyle(element).getPropertyValue('--lmPrimaryText'));
         element.style.setProperty("--secondaryText", getComputedStyle(element).getPropertyValue('--lmSecondaryText'));
     }
-}
-
+};
 
 addBox.addEventListener('click', ()=>{
     titleEl.focus();
