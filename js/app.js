@@ -56,7 +56,20 @@ function updateNote(noteId, title, desc) {
 function darkLightMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-  }
+    if (element.classList.contains("dark-mode")) {
+        // Activate dark mode
+        element.style.setProperty("--primaryColor", getComputedStyle(element).getPropertyValue('--dmPrimaryColor'));
+        element.style.setProperty("--secondaryColor", getComputedStyle(element).getPropertyValue('--dmSecondaryColor'));
+        element.style.setProperty("--primaryText", getComputedStyle(element).getPropertyValue('--dmPrimaryText'));
+        element.style.setProperty("--secondaryText", getComputedStyle(element).getPropertyValue('--dmSecondaryText'));
+    } else {
+        // Activate light mode
+        element.style.setProperty("--primaryColor", getComputedStyle(element).getPropertyValue('--lmPrimaryColor'));
+        element.style.setProperty("--secondaryColor", getComputedStyle(element).getPropertyValue('--lmSecondaryColor'));
+        element.style.setProperty("--primaryText", getComputedStyle(element).getPropertyValue('--lmPrimaryText'));
+        element.style.setProperty("--secondaryText", getComputedStyle(element).getPropertyValue('--lmSecondaryText'));
+    }
+}
 
 
 addBox.addEventListener('click', ()=>{

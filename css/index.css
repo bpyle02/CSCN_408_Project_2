@@ -1,15 +1,21 @@
 
 :root{
-    --primaryColor:#dfdee3;
-    --secondaryColor: white;
-    --primaryText: black;
-    --secondaryText: #7a797c;
+    --primaryColor: var(--lmPrimaryColor);
+    --secondaryColor: var(--lmSecondaryColor);
+    --primaryText: var(--lmPrimaryText);
+    --secondaryText: var(--lmSecondaryText);
 
     --accentColor: #dcb13d;
+
+    --lmPrimaryColor:#dfdee3;
+    --lmSecondaryColor: white;
+    --lmPrimaryText: black;
+    --lmSecondaryText: #7a797c;
     
     --dmPrimaryColor:#1c1c1c;
-    --dmsecondaryColor: grey;
+    --dmSecondaryColor: grey;
     --dmPrimaryText: white;
+    --dmSecondaryText: #dfdee3;
 }
 
 *{
@@ -25,6 +31,10 @@ body{
 
 button {
     cursor: pointer;
+}
+
+#dmLmToggle {
+    background-color: var(--secondaryColor);
 }
 
 .wrapper{
