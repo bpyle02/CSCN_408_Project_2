@@ -169,3 +169,8 @@ form .row label{
     font-size: 17px;
     background: var(--primaryColor);
 }
+
+
+.uil {
+    font-style: normal;
+}
