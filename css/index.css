@@ -5,17 +5,17 @@
     --primaryText: var(--lmPrimaryText);
     --secondaryText: var(--lmSecondaryText);
 
-    --accentColor: #dcb13d;
+    --accentColor: #e4af0a;
 
-    --lmPrimaryColor:#dfdee3;
+    --lmPrimaryColor:#f2f2f7;
     --lmSecondaryColor: white;
     --lmPrimaryText: black;
-    --lmSecondaryText: #7a797c;
+    --lmSecondaryText: #aaaaad;
     
-    --dmPrimaryColor:#1c1c1c;
-    --dmSecondaryColor: grey;
-    --dmPrimaryText: white;
-    --dmSecondaryText: #dfdee3;
+    --dmPrimaryColor:black;
+    --dmSecondaryColor: #1c1c1e;
+    --dmPrimaryText: #fefefe;
+    --dmSecondaryText: #8a8a8c;
 }
 
 *{
@@ -29,26 +29,30 @@ body{
     background: var(--primaryColor);
 }
 
+h1 {
+    color: var(--primaryText)
+}
+
 button {
     cursor: pointer;
 }
 
 #dmLmToggle {
-    background-color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: large;
 }
 
 .wrapper{
     margin: 50px;
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fill, 265px);
 }
 
 .wrapper li{
-    height: 100px;
     list-style: none;
-    background: var(--secondaryColor);
-    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+    /* border-radius: 5px; */
     padding: 15px 20px 20px;
 }
 
@@ -62,12 +66,13 @@ button {
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--primaryColor);
 }
 
 .add-box .icon{
-    height: 88px;
-    width: 88px;
-    font-size: 60px;
+    height: 105px;
+    font-size: 50px;
     justify-content: center;
     color: var(--primaryColor);
 }
@@ -128,7 +133,7 @@ button {
     top: 50%;
     left: 50%;
     z-index: 3;
-    max-width: 400px;
+    max-width: 80%;
     width: 100%;
     justify-content: center;
     transform: translate(-50%, -50%);
@@ -194,7 +199,7 @@ form .row label{
 }
 
 .content form textarea{
-    height: 150px;
+    height: 200px;
     padding: 8px 15px;
     resize: none;
 }
@@ -215,6 +220,7 @@ form .row label{
 }
 
 .header {
-    margin: 50px 0px 0px 50px;
+    margin: 50px 50px -35px 50px;
     display: flex;
+    justify-content: space-between;
 }

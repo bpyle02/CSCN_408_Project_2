@@ -5,7 +5,7 @@ popupTitle = popupBox.querySelector('header p'),
 closeIcon = document.querySelector('header i'),
 titleEl = document.querySelector('input'),
 descEl = document.querySelector('textarea'),
-addBtn = document.querySelector('button ');
+addBtn = document.querySelector('.add-btn');
 
 
 const months= ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -54,6 +54,7 @@ function updateNote(noteId, title, desc) {
 }
 
 function darkLightMode() {
+    var btn = document.getElementById("dmLmToggle");
     var element = document.body;
     element.classList.toggle("dark-mode");
     if (element.classList.contains("dark-mode")) {
@@ -62,21 +63,24 @@ function darkLightMode() {
         element.style.setProperty("--secondaryColor", getComputedStyle(element).getPropertyValue('--dmSecondaryColor'));
         element.style.setProperty("--primaryText", getComputedStyle(element).getPropertyValue('--dmPrimaryText'));
         element.style.setProperty("--secondaryText", getComputedStyle(element).getPropertyValue('--dmSecondaryText'));
+        btn.innerHTML = '☀️';
     } else {
         // Activate light mode
         element.style.setProperty("--primaryColor", getComputedStyle(element).getPropertyValue('--lmPrimaryColor'));
         element.style.setProperty("--secondaryColor", getComputedStyle(element).getPropertyValue('--lmSecondaryColor'));
         element.style.setProperty("--primaryText", getComputedStyle(element).getPropertyValue('--lmPrimaryText'));
         element.style.setProperty("--secondaryText", getComputedStyle(element).getPropertyValue('--lmSecondaryText'));
+        btn.innerHTML = "🌙"
     }
 };
 
-addBox.addEventListener('click', ()=>{
+addBox.addEventListener('click', () => {
+    console.log("addBox event listener");
     titleEl.focus();
-    popupBox.classList.add('show')
+    popupBox.classList.add('show');
 });
 
-closeIcon.addEventListener('click', ()=>{
+closeIcon.addEventListener('click', () => {
     isUpdate = false;
     titleEl.value = '';
     descEl.value = '';
@@ -85,7 +89,8 @@ closeIcon.addEventListener('click', ()=>{
     popupBox.classList.remove('show');
 });
 
-addBtn.addEventListener('click', (e)=>{
+addBtn.addEventListener('click', (e) => {
+    console.log("addBtn event listener");
     e.preventDefault();
     let noteTitle = titleEl.value,
     noteDesc = descEl.value;

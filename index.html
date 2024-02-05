@@ -7,77 +7,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/index.css">
         <title>Note Taking</title>
-    </head>  
+    </head>
+
     <body>
-
-<button id="dmLmToggle" onclick="darkLightMode()">Dark Mode/Light Mode</button>
-
-<div class="popup-box">
-    <div class="popup">
-        <div class="content">
-            <header>
-                <p>Add a new note</p>
-                <i class="uil uil-times"></i>
-            </header>
-            <form action="#">
-                <div class="row title">
-                    <label for="">Title</label>
-                    <input type="text">
+        <div class="main-wrapper">
+            <div class="centered-div">
+                <div class="header">
+                    <h1>Notes</h1>
+                    <button id="dmLmToggle" onclick="darkLightMode()">🌙</button>
                 </div>
-                <div class="row description">
-                    <label for="">Description</label>
-                    <textarea></textarea>
-                </div>
-                <button>Add Note</button>
-            </form>
-        </div>
-    </div>
-</div>
-    <div class="wrapper">
-        <li class="add-box">
-            <div class="icon">
-                <i class="uil uil-file-plus-alt">➕</i>
-            </div>
-            
-        </li>
-        
-        <div class="header">
-            <h1>Notes</h1>
-            <i class="uil uil-file-plus-alt">➕</i>
-            <button onclick="darkLightMode()">Dark Mode/Light Mode</button>
-        </div>
 
-        <div class="popup-box">
-            <div class="popup">
-                <div class="content">
-                    <header>
-                        <p>Add a new note</p>
-                        <i class="uil uil-times"></i>
-                    </header>
-                    <form action="#">
-                        <div class="row title">
-                            <label for="">Title</label>
-                            <input type="text">
+                <div class="popup-box">
+                    <div class="popup">
+                        <div class="content">
+                            <header>
+                                <p>Add a new note</p>
+                                <i class="uil uil-times">❌</i>
+                            </header>
+                            <form action="#">
+                                <div class="row title">
+                                    <label for="">Title</label>
+                                    <input type="text">
+                                </div>
+                                <div class="row description">
+                                    <label for="">Description</label>
+                                    <textarea></textarea>
+                                </div>
+                                <button class="add-btn">Add Note</button>
+                            </form>
                         </div>
-                        <div class="row description">
-                            <label for="">Description</label>
-                            <textarea></textarea>
-                        </div>
-                        <button>Add Note</button>
-                    </form>
+                    </div>
                 </div>
+
+                <div class="wrapper">
+                    <span class="add-box">
+                        <div class="icon">
+                            <i class="uil uil-file-plus-alt">➕</i>
+                        </div>
+                    </span>
+                </div>
+
+                <script src="./js/app.js"></script>
             </div>
         </div>
-
-        <div class="wrapper">
-            <li class="add-box">
-                <div class="icon">
-                    <i class="uil uil-file-plus-alt">➕</i>
-                </div>
-            </li>
-        </div>
-
-        <script src="./js/app.js"></script>
-            
     </body>
 </html>
