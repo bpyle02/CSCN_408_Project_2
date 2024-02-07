@@ -27,6 +27,14 @@ button {
     cursor: pointer;
 }
 
+/*.highlight {
+    background-color: yellow;
+  }
+
+  #highlightButton {
+    display: none;
+  } */
+
 .wrapper{
     margin: 50px;
     display: grid;

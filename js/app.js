@@ -103,3 +103,38 @@ addBtn.addEventListener('click', (e)=>{
     }
 });
 
+/*function highlightText() {
+    // Get the user's selection
+    let selection = window.getSelection();
+
+    if (selection.rangeCount > 0) {
+      // Get the first range of the selection
+      let range = selection.getRangeAt(0);
+
+      // Create a span element with a class for styling
+      let span = document.createElement('span');
+      span.className = 'highlight';
+
+      // Surround the selected text with the span
+      range.surroundContents(span);
+
+      // Clear the selection
+      selection.removeAllRanges();
+    }
+
+    // Hide the button after highlighting
+    document.getElementById('highlightButton').style.display = 'none';
+  } 
+
+  document.addEventListener('selectionchange', function() {
+    // Check if there is a selection
+    let selection = window.getSelection();
+    if (selection && selection.toString().trim() !== '') {
+      // Display the button if there is a selection
+      document.getElementById('highlightButton').style.display = 'inline-block';
+    } else {
+      // Hide the button if there is no selection
+      document.getElementById('highlightButton').style.display = 'none';
+    }
+  }); */
+
