@@ -120,7 +120,7 @@ addBtn.addEventListener('click', (e) => {
     }
 });
 
-/*function highlightText() {
+function highlightText() {
     // Get the user's selection
     let selection = window.getSelection();
 
@@ -153,5 +153,5 @@ addBtn.addEventListener('click', (e) => {
       // Hide the button if there is no selection
       document.getElementById('highlightButton').style.display = 'none';
     }
-  }); */
+  }); 
 
